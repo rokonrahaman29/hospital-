@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - Chapra Gramin Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language and Theme Controls -->
+    <div class="top-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">English</button>
+                    <button id="lang-bn" class="lang-btn">বাংলা</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hospital"></i>
+                    <div class="logo-text">
+                        <h1 data-en="Chapra Gramin Hospital" data-bn="চাপড়া গ্রামীণ হাসপাতাল">Chapra Gramin Hospital</h1>
+                        <p data-en="Quality Healthcare for All" data-bn="সবার জন্য মানসম্মত স্বাস্থ্যসেবা">Quality Healthcare for All</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="emergency-contact">
+                        <i class="fas fa-ambulance"></i>
+                        <div>
+                            <span data-en="Emergency" data-bn="জরুরি">Emergency</span>
+                            <strong>+91-8000-XXXX</strong>
+                        </div>
+                    </div>
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" onclick="showLoginModal()" data-en="Login" data-bn="লগইন">Login</button>
+                        <button class="btn btn-primary" onclick="showSignupModal()" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-bn="হোম">Home</a></li>
+                <li><a href="infrastructure.html" data-en="Infrastructure" data-bn="অবকাঠামো">Infrastructure</a></li>
+                <li><a href="doctors.html" class="active" data-en="Doctors" data-bn="ডাক্তার">Doctors</a></li>
+                <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                <li><a href="facilities.html" data-en="Facilities" data-bn="সুবিধা">Facilities</a></li>
+                <li><a href="pharmacy.html" data-en="Pharmacy" data-bn="ফার্মেসি">Pharmacy</a></li>
+                <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-en="Our Doctors" data-bn="আমাদের ডাক্তার">Our Doctors</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html" data-en="Home" data-bn="হোম">Home</a> / 
+                    <span data-en="Doctors" data-bn="ডাক্তার">Doctors</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section class="doctors-section">
+            <div class="container">
+                <div class="section-intro">
+                    <h2 data-en="Meet Our Expert Medical Team" data-bn="আমাদের বিশেষজ্ঞ চিকিৎসা দলের সাথে দেখা করুন">Meet Our Expert Medical Team</h2>
+                    <p data-en="Our hospital is staffed with highly qualified and experienced doctors who are committed to providing the best healthcare services." data-bn="আমাদের হাসপাতালে উচ্চ যোগ্যতাসম্পন্ন এবং অভিজ্ঞ ডাক্তার রয়েছেন যারা সর্বোত্তম স্বাস্থ্যসেবা প্রদানের জন্য প্রতিশ্রুতিবদ্ধ।">Our hospital is staffed with highly qualified and experienced doctors who are committed to providing the best healthcare services.</p>
+                </div>
+
+                <!-- Department Filter -->
+                <div class="department-filter">
+                    <button class="filter-btn active" data-department="all" data-en="All Departments" data-bn="সকল বিভাগ">All Departments</button>
+                    <button class="filter-btn" data-department="general" data-en="General Medicine" data-bn="সাধারণ চিকিৎসা">General Medicine</button>
+                    <button class="filter-btn" data-department="cardiology" data-en="Cardiology" data-bn="হৃদরোগ">Cardiology</button>
+                    <button class="filter-btn" data-department="orthopedic" data-en="Orthopedic" data-bn="অর্থোপেডিক">Orthopedic</button>
+                    <button class="filter-btn" data-department="pediatric" data-en="Pediatric" data-bn="শিশু চিকিৎসা">Pediatric</button>
+                    <button class="filter-btn" data-department="gynecology" data-en="Gynecology" data-bn="স্ত্রীরোগ">Gynecology</button>
+                </div>
+
+                <!-- Doctors Grid -->
+                <div class="doctors-grid">
+                    <!-- General Medicine -->
+                    <div class="doctor-card" data-department="general">
+                        <div class="doctor-image">
+                            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" alt="Dr. Rajesh Kumar">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 data-en="Dr. Rajesh Kumar" data-bn="ডাঃ রাজেশ কুমার">Dr. Rajesh Kumar</h3>
+                            <p class="doctor-specialty" data-en="General Medicine" data-bn="সাধারণ চিকিৎসা">General Medicine</p>
+                            <p class="doctor-qualification" data-en="MBBS, MD (Medicine)" data-bn="এমবিবিএস, এমডি (মেডিসিন)">MBBS, MD (Medicine)</p>
+                            <p class="doctor-experience" data-en="15 Years Experience" data-bn="১৫ বছরের অভিজ্ঞতা">15 Years Experience</p>
+                            <div class="doctor-schedule">
+                                <p data-en="Available: Mon-Fri 9AM-5PM" data-bn="উপলব্ধ: সোম-শুক্র সকাল ৯টা-বিকাল ৫টা">Available: Mon-Fri 9AM-5PM</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Rajesh Kumar')" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Cardiology -->
+                    <div class="doctor-card" data-department="cardiology">
+                        <div class="doctor-image">
+                            <img src="https://images.pexels.com/photos/6749769/pexels-photo-6749769.jpeg" alt="Dr. Priya Sharma">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 data-en="Dr. Priya Sharma" data-bn="ডাঃ প্রিয়া শর্মা">Dr. Priya Sharma</h3>
+                            <p class="doctor-specialty" data-en="Cardiologist" data-bn="হৃদরোগ বিশেষজ্ঞ">Cardiologist</p>
+                            <p class="doctor-qualification" data-en="MBBS, MD, DM (Cardiology)" data-bn="এমবিবিএস, এমডি, ডিএম (কার্ডিওলজি)">MBBS, MD, DM (Cardiology)</p>
+                            <p class="doctor-experience" data-en="12 Years Experience" data-bn="১২ বছরের অভিজ্ঞতা">12 Years Experience</p>
+                            <div class="doctor-schedule">
+                                <p data-en="Available: Tue-Sat 10AM-4PM" data-bn="উপলব্ধ: মঙ্গল-শনি সকাল ১০টা-বিকাল ৪টা">Available: Tue-Sat 10AM-4PM</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Priya Sharma')" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Orthopedic -->
+                    <div class="doctor-card" data-department="orthopedic">
+                        <div class="doctor-image">
+                            <img src="https://images.pexels.com/photos/5214949/pexels-photo-5214949.jpeg" alt="Dr. Amit Singh">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 data-en="Dr. Amit Singh" data-bn="ডাঃ অমিত সিং">Dr. Amit Singh</h3>
+                            <p class="doctor-specialty" data-en="Orthopedic Surgeon" data-bn="অর্থোপেডিক সার্জন">Orthopedic Surgeon</p>
+                            <p class="doctor-qualification" data-en="MBBS, MS (Orthopedics)" data-bn="এমবিবিএস, এমএস (অর্থোপেডিক্স)">MBBS, MS (Orthopedics)</p>
+                            <p class="doctor-experience" data-en="18 Years Experience" data-bn="১৮ বছরের অভিজ্ঞতা">18 Years Experience</p>
+                            <div class="doctor-schedule">
+                                <p data-en="Available: Mon-Thu 8AM-3PM" data-bn="উপলব্ধ: সোম-বৃহ সকাল ৮টা-বিকাল ৩টা">Available: Mon-Thu 8AM-3PM</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Amit Singh')" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Pediatric -->
+                    <div class="doctor-card" data-department="pediatric">
+                        <div class="doctor-image">
+                            <img src="https://images.pexels.com/photos/5998474/pexels-photo-5998474.jpeg" alt="Dr. Sunita Devi">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 data-en="Dr. Sunita Devi" data-bn="ডাঃ সুনিতা দেবী">Dr. Sunita Devi</h3>
+                            <p class="doctor-specialty" data-en="Pediatrician" data-bn="শিশু চিকিৎসক">Pediatrician</p>
+                            <p class="doctor-qualification" data-en="MBBS, MD (Pediatrics)" data-bn="এমবিবিএস, এমডি (পেডিয়াট্রিক্স)">MBBS, MD (Pediatrics)</p>
+                            <p class="doctor-experience" data-en="10 Years Experience" data-bn="১০ বছরের অভিজ্ঞতা">10 Years Experience</p>
+                            <div class="doctor-schedule">
+                                <p data-en="Available: Mon-Sat 9AM-6PM" data-bn="উপলব্ধ: সোম-শনি সকাল ৯টা-সন্ধ্যা ৬টা">Available: Mon-Sat 9AM-6PM</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Sunita Devi')" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Gynecology -->
+                    <div class="doctor-card" data-department="gynecology">
+                        <div class="doctor-image">
+                            <img src="https://images.pexels.com/photos/5214997/pexels-photo-5214997.jpeg" alt="Dr. Meena Jha">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 data-en="Dr. Meena Jha" data-bn="ডাঃ মীনা ঝা">Dr. Meena Jha</h3>
+                            <p class="doctor-specialty" data-en="Gynecologist" data-bn="স্ত্রীরোগ বিশেষজ্ঞ">Gynecologist</p>
+                            <p class="doctor-qualification" data-en="MBBS, MS (Gynecology)" data-bn="এমবিবিএস, এমএস (গাইনোকোলজি)">MBBS, MS (Gynecology)</p>
+                            <p class="doctor-experience" data-en="14 Years Experience" data-bn="১৪ বছরের অভিজ্ঞতা">14 Years Experience</p>
+                            <div class="doctor-schedule">
+                                <p data-en="Available: Wed-Sun 10AM-5PM" data-bn="উপলব্ধ: বুধ-রবি সকাল ১০টা-বিকাল ৫টা">Available: Wed-Sun 10AM-5PM</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Meena Jha')" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Medicine -->
+                    <div class="doctor-card" data-department="general">
+                        <div class="doctor-image">
+                            <img src="https://images.pexels.com/photos/5214954/pexels-photo-5214954.jpeg" alt="Dr. Vikash Kumar">
+                        </div>
+                        <div class="doctor-info">
+                            <h3 data-en="Dr. Vikash Kumar" data-bn="ডাঃ বিকাশ কুমার">Dr. Vikash Kumar</h3>
+                            <p class="doctor-specialty" data-en="Emergency Medicine" data-bn="জরুরি চিকিৎসা">Emergency Medicine</p>
+                            <p class="doctor-qualification" data-en="MBBS, MD (Emergency Medicine)" data-bn="এমবিবিএস, এমডি (জরুরি চিকিৎসা)">MBBS, MD (Emergency Medicine)</p>
+                            <p class="doctor-experience" data-en="8 Years Experience" data-bn="৮ বছরের অভিজ্ঞতা">8 Years Experience</p>
+                            <div class="doctor-schedule">
+                                <p data-en="Available: 24/7 Emergency" data-bn="উপলব্ধ: ২৪/৭ জরুরি">Available: 24/7 Emergency</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookAppointment('Dr. Vikash Kumar')" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-en="Need to See a Doctor?" data-bn="ডাক্তার দেখানোর প্রয়োজন?">Need to See a Doctor?</h2>
+                    <p data-en="Book an appointment with our expert doctors and get the best healthcare services." data-bn="আমাদের বিশেষজ্ঞ ডাক্তারদের সাথে অ্যাপয়েন্টমেন্ট বুক করুন এবং সর্বোত্তম স্বাস্থ্যসেবা পান।">Book an appointment with our expert doctors and get the best healthcare services.</p>
+                    <button class="btn btn-primary btn-large" onclick="location.href='appointment.html'" data-en="Book Appointment Now" data-bn="এখনই অ্যাপয়েন্টমেন্ট বুক করুন">Book Appointment Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-bn="যোগাযোগ করুন">Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-en="Srinangar, Chapra, West Bengal- 741123, India" data-bn="শ্রীনানগর, চাপড়া, পশ্চিমবঙ্গ- 741123, ভারত">Srinangar, Chapra, West Bengal- 741123, India</span></p>
+                        <p><i class="fas fa-phone"></i> +91-8000-XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@chapragramin.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-bn="দ্রুত লিংক">Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                        <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+                        <li><a href="doctors.html" data-en="Our Doctors" data-bn="আমাদের ডাক্তার">Our Doctors</a></li>
+                        <li><button onclick="showComplaintModal()" data-en="Complaint" data-bn="অভিযোগ">Complaint</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Emergency Help" data-bn="জরুরি সাহায্য">Emergency Help</h4>
+                    <div class="emergency-actions">
+                        <button class="btn btn-danger" onclick="callAmbulance()" data-en="Call Ambulance" data-bn="অ্যাম্বুলেন্স কল করুন">Call Ambulance</button>
+                        <p data-en="Available 24/7" data-bn="২৪/৭ উপলব্ধ">Available 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2024 Chapra Gramin Hospital. All rights reserved to Rokon. made with love for my people and community.❤️" data-bn="© ২০২৪ চাপড়া গ্রামীণ হাসপাতাল। সর্বস্বত্ব রোকনের কাছে সংরক্ষিত। আমার মানুষ এবং সম্প্রদায়ের প্রতি ভালোবাসা থেকে তৈরি।❤️">© 2024 Chapra Gramin Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include all modals -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h3 data-en="Login" data-bn="লগইন">Login</h3>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label data-en="Email/Phone" data-bn="ইমেইল/ফোন">Email/Phone</label>
+                    <input type="text" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Login" data-bn="লগইন">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h3 data-en="Sign Up" data-bn="সাইন আপ">Sign Up</h3>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label data-en="Full Name" data-bn="পূর্ণ নাম">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email" data-bn="ইমেইল">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Phone" data-bn="ফোন">Phone</label>
+                    <input type="tel" id="signupPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Complaint Modal -->
+    <div id="complaintModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('complaintModal')">&times;</span>
+            <h3 data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</h3>
+            <form id="complaintForm" onsubmit="handleComplaint(event)">
+                <div class="form-group">
+                    <label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
+                    <input type="text" id="complaintName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="complaintPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Category" data-bn="অভিযোগের বিভাগ">Complaint Category</label>
+                    <select id="complaintCategory" required>
+                        <option value="" data-en="Select Category" data-bn="বিভাগ নির্বাচন করুন">Select Category</option>
+                        <option value="service" data-en="Service Quality" data-bn="সেবার মান">Service Quality</option>
+                        <option value="staff" data-en="Staff Behavior" data-bn="কর্মচারীদের আচরণ">Staff Behavior</option>
+                        <option value="facility" data-en="Facility Issues" data-bn="সুবিধার সমস্যা">Facility Issues</option>
+                        <option value="billing" data-en="Billing Issues" data-bn="বিলিং সমস্যা">Billing Issues</option>
+                        <option value="other" data-en="Other" data-bn="অন্যান্য">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Details" data-bn="অভিযোগের বিস্তারিত">Complaint Details</label>
+                    <textarea id="complaintDetails" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <span id="notificationMessage"></span>
+        <button onclick="closeNotification()">&times;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/doctors.js"></script>
+</body>
+</html>

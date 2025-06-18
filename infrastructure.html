@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure - Chapra Gramin Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language and Theme Controls -->
+    <div class="top-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">English</button>
+                    <button id="lang-bn" class="lang-btn">বাংলা</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hospital"></i>
+                    <div class="logo-text">
+                        <h1 data-en="Chapra Gramin Hospital" data-bn="চাপড়া গ্রামীণ হাসপাতাল">Chapra Gramin Hospital</h1>
+                        <p data-en="Quality Healthcare for All" data-bn="সবার জন্য মানসম্মত স্বাস্থ্যসেবা">Quality Healthcare for All</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="emergency-contact">
+                        <i class="fas fa-ambulance"></i>
+                        <div>
+                            <span data-en="Emergency" data-bn="জরুরি">Emergency</span>
+                            <strong>+91-8000-XXXX</strong>
+                        </div>
+                    </div>
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" onclick="showLoginModal()" data-en="Login" data-bn="লগইন">Login</button>
+                        <button class="btn btn-primary" onclick="showSignupModal()" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-bn="হোম">Home</a></li>
+                <li><a href="infrastructure.html" class="active" data-en="Infrastructure" data-bn="অবকাঠামো">Infrastructure</a></li>
+                <li><a href="doctors.html" data-en="Doctors" data-bn="ডাক্তার">Doctors</a></li>
+                <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                <li><a href="facilities.html" data-en="Facilities" data-bn="সুবিধা">Facilities</a></li>
+                <li><a href="pharmacy.html" data-en="Pharmacy" data-bn="ফার্মেসি">Pharmacy</a></li>
+                <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-en="Infrastructure" data-bn="অবকাঠামো">Infrastructure</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html" data-en="Home" data-bn="হোম">Home</a> / 
+                    <span data-en="Infrastructure" data-bn="অবকাঠামো">Infrastructure</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Infrastructure Overview -->
+        <section class="infrastructure-overview">
+            <div class="container">
+                <div class="section-intro">
+                    <h2 data-en="Our Modern Healthcare Infrastructure" data-bn="আমাদের আধুনিক স্বাস্থ্যসেবা অবকাঠামো">Our Modern Healthcare Infrastructure</h2>
+                    <p data-en="Chapra Gramin Hospital is equipped with state-of-the-art facilities and modern medical equipment to provide the best healthcare services to our patients." data-bn="চাপড়া গ্রামীণ হাসপাতাল আমাদের রোগীদের সর্বোত্তম স্বাস্থ্যসেবা প্রদানের জন্য অত্যাধুনিক সুবিধা এবং আধুনিক চিকিৎসা সরঞ্জাম দিয়ে সজ্জিত।">Chapra Gramin Hospital is equipped with state-of-the-art facilities and modern medical equipment to provide the best healthcare services to our patients.</p>
+                </div>
+
+                <div class="infrastructure-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-bed"></i>
+                        <h3>100+</h3>
+                        <p data-en="Hospital Beds" data-bn="হাসপাতালের বেড">Hospital Beds</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-procedures"></i>
+                        <h3>15+</h3>
+                        <p data-en="ICU Beds" data-bn="আইসিইউ বেড">ICU Beds</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-md"></i>
+                        <h3>8</h3>
+                        <p data-en="Operation Theaters" data-bn="অপারেশন থিয়েটার">Operation Theaters</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-ambulance"></i>
+                        <h3>5</h3>
+                        <p data-en="Ambulances" data-bn="অ্যাম্বুলেন্স">Ambulances</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure Details -->
+        <section class="infrastructure-details">
+            <div class="container">
+                <div class="infrastructure-grid">
+                    <!-- General Ward -->
+                    <div class="infrastructure-item">
+                        <div class="infrastructure-image">
+                            <img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg" alt="General Ward">
+                        </div>
+                        <div class="infrastructure-content">
+                            <h3 data-en="General Ward" data-bn="সাধারণ ওয়ার্ড">General Ward</h3>
+                            <p data-en="Our general ward features comfortable beds with modern amenities, ensuring patient comfort during their stay." data-bn="আমাদের সাধারণ ওয়ার্ডে আধুনিক সুবিধা সহ আরামদায়ক বিছানা রয়েছে, যা রোগীদের থাকার সময় আরাম নিশ্চিত করে।">Our general ward features comfortable beds with modern amenities, ensuring patient comfort during their stay.</p>
+                            <ul>
+                                <li data-en="60 beds with modern facilities" data-bn="আধুনিক সুবিধা সহ ৬০টি বিছানা">60 beds with modern facilities</li>
+                                <li data-en="24/7 nursing care" data-bn="২৪/৭ নার্সিং যত্ন">24/7 nursing care</li>
+                                <li data-en="Patient entertainment system" data-bn="রোগী বিনোদন ব্যবস্থা">Patient entertainment system</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ICU -->
+                    <div class="infrastructure-item">
+                        <div class="infrastructure-image">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="ICU">
+                        </div>
+                        <div class="infrastructure-content">
+                            <h3 data-en="Intensive Care Unit (ICU)" data-bn="নিবিড় পরিচর্যা ইউনিট (আইসিইউ)">Intensive Care Unit (ICU)</h3>
+                            <p data-en="State-of-the-art ICU with advanced life support systems and continuous monitoring capabilities." data-bn="উন্নত জীবন সহায়তা ব্যবস্থা এবং নিরবচ্ছিন্ন পর্যবেক্ষণ ক্ষমতা সহ অত্যাধুনিক আইসিইউ।">State-of-the-art ICU with advanced life support systems and continuous monitoring capabilities.</p>
+                            <ul>
+                                <li data-en="15 ICU beds with ventilators" data-bn="ভেন্টিলেটর সহ ১৫টি আইসিইউ বিছানা">15 ICU beds with ventilators</li>
+                                <li data-en="Continuous cardiac monitoring" data-bn="ক্রমাগত কার্ডিয়াক পর্যবেক্ষণ">Continuous cardiac monitoring</li>
+                                <li data-en="Specialized nursing staff" data-bn="বিশেষ নার্সিং স্টাফ">Specialized nursing staff</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Operation Theater -->
+                    <div class="infrastructure-item">
+                        <div class="infrastructure-image">
+                            <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="Operation Theater">
+                        </div>
+                        <div class="infrastructure-content">
+                            <h3 data-en="Operation Theaters" data-bn="অপারেশন থিয়েটার">Operation Theaters</h3>
+                            <p data-en="Modern operation theaters equipped with advanced surgical equipment and technology for complex procedures." data-bn="জটিল প্রক্রিয়ার জন্য উন্নত সার্জিক্যাল সরঞ্জাম এবং প্রযুক্তি দিয়ে সজ্জিত আধুনিক অপারেশন থিয়েটার।">Modern operation theaters equipped with advanced surgical equipment and technology for complex procedures.</p>
+                            <ul>
+                                <li data-en="8 fully equipped operation theaters" data-bn="৮টি সম্পূর্ণ সজ্জিত অপারেশন থিয়েটার">8 fully equipped operation theaters</li>
+                                <li data-en="HEPA filtration system" data-bn="হেপা ফিল্ট্রেশন সিস্টেম">HEPA filtration system</li>
+                                <li data-en="Advanced anesthesia equipment" data-bn="উন্নত অ্যানেস্থেসিয়া সরঞ্জাম">Advanced anesthesia equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Diagnostic Center -->
+                    <div class="infrastructure-item">
+                        <div class="infrastructure-image">
+                            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg" alt="Diagnostic Center">
+                        </div>
+                        <div class="infrastructure-content">
+                            <h3 data-en="Diagnostic Center" data-bn="ডায়াগনস্টিক সেন্টার">Diagnostic Center</h3>
+                            <p data-en="Comprehensive diagnostic services with the latest imaging and laboratory equipment for accurate diagnosis." data-bn="সঠিক নির্ণয়ের জন্য সর্বশেষ ইমেজিং এবং ল্যাবরেটরি সরঞ্জাম সহ ব্যাপক ডায়াগনস্টিক সেবা।">Comprehensive diagnostic services with the latest imaging and laboratory equipment for accurate diagnosis.</p>
+                            <ul>
+                                <li data-en="Digital X-Ray and Ultrasound" data-bn="ডিজিটাল এক্স-রে এবং আল্ট্রাসাউন্ড">Digital X-Ray and Ultrasound</li>
+                                <li data-en="CT Scan and MRI facilities" data-bn="সিটি স্ক্যান এবং এমআরআই সুবিধা">CT Scan and MRI facilities</li>
+                                <li data-en="Fully automated laboratory" data-bn="সম্পূর্ণ স্বয়ংক্রিয় ল্যাবরেটরি">Fully automated laboratory</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Department -->
+                    <div class="infrastructure-item">
+                        <div class="infrastructure-image">
+                            <img src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg" alt="Emergency Department">
+                        </div>
+                        <div class="infrastructure-content">
+                            <h3 data-en="Emergency Department" data-bn="জরুরি বিভাগ">Emergency Department</h3>
+                            <p data-en="24/7 emergency services with rapid response team and advanced life support capabilities." data-bn="দ্রুত প্রতিক্রিয়া দল এবং উন্নত জীবন সহায়তা ক্ষমতা সহ ২৪/৭ জরুরি সেবা।">24/7 emergency services with rapid response team and advanced life support capabilities.</p>
+                            <ul>
+                                <li data-en="Trauma care unit" data-bn="ট্রমা কেয়ার ইউনিট">Trauma care unit</li>
+                                <li data-en="Cardiac emergency care" data-bn="কার্ডিয়াক জরুরি যত্ন">Cardiac emergency care</li>
+                                <li data-en="Ambulance services" data-bn="অ্যাম্বুলেন্স সেবা">Ambulance services</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Patient Amenities -->
+                    <div class="infrastructure-item">
+                        <div class="infrastructure-image">
+                            <img src="https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg" alt="Patient Amenities">
+                        </div>
+                        <div class="infrastructure-content">
+                            <h3 data-en="Patient Amenities" data-bn="রোগী সুবিধা">Patient Amenities</h3>
+                            <p data-en="Comfortable waiting areas, cafeteria, and visitor facilities to ensure a pleasant experience for patients and families." data-bn="রোগী এবং পরিবারের জন্য একটি মনোরম অভিজ্ঞতা নিশ্চিত করতে আরামদায়ক অপেক্ষার এলাকা, ক্যাফেটেরিয়া এবং দর্শনার্থী সুবিধা।">Comfortable waiting areas, cafeteria, and visitor facilities to ensure a pleasant experience for patients and families.</p>
+                            <ul>
+                                <li data-en="Spacious waiting lounges" data-bn="প্রশস্ত অপেক্ষার লাউঞ্জ">Spacious waiting lounges</li>
+                                <li data-en="On-site cafeteria" data-bn="অন-সাইট ক্যাফেটেরিয়া">On-site cafeteria</li>
+                                <li data-en="Free Wi-Fi throughout" data-bn="সর্বত্র বিনামূল্যে ওয়াই-ফাই">Free Wi-Fi throughout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure Features -->
+        <section class="infrastructure-features">
+            <div class="container">
+                <h2 data-en="Key Infrastructure Features" data-bn="মূল অবকাঠামো বৈশিষ্ট্য">Key Infrastructure Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4 data-en="Safety & Security" data-bn="নিরাপত্তা এবং নিরাপত্তা">Safety & Security</h4>
+                        <p data-en="Advanced security systems and fire safety measures" data-bn="উন্নত নিরাপত্তা ব্যবস্থা এবং অগ্নি নিরাপত্তা ব্যবস্থা">Advanced security systems and fire safety measures</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h4 data-en="Power Backup" data-bn="পাওয়ার ব্যাকআপ">Power Backup</h4>
+                        <p data-en="Uninterrupted power supply with generator backup" data-bn="জেনারেটর ব্যাকআপ সহ নিরবচ্ছিন্ন বিদ্যুৎ সরবরাহ">Uninterrupted power supply with generator backup</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-tint"></i>
+                        <h4 data-en="Water Treatment" data-bn="জল চিকিৎসা">Water Treatment</h4>
+                        <p data-en="On-site water treatment and purification system" data-bn="অন-সাইট জল চিকিৎসা এবং পরিশোধন ব্যবস্থা">On-site water treatment and purification system</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-recycle"></i>
+                        <h4 data-en="Waste Management" data-bn="বর্জ্য ব্যবস্থাপনা">Waste Management</h4>
+                        <p data-en="Proper medical waste disposal and recycling" data-bn="যথাযথ চিকিৎসা বর্জ্য নিষ্পত্তি এবং পুনর্ব্যবহার">Proper medical waste disposal and recycling</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-wheelchair"></i>
+                        <h4 data-en="Accessibility" data-bn="অ্যাক্সেসিবিলিটি">Accessibility</h4>
+                        <p data-en="Wheelchair accessible with ramps and elevators" data-bn="র‌্যাম্প এবং লিফট সহ হুইলচেয়ার অ্যাক্সেসযোগ্য">Wheelchair accessible with ramps and elevators</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-car"></i>
+                        <h4 data-en="Parking" data-bn="পার্কিং">Parking</h4>
+                        <p data-en="Ample parking space for patients and visitors" data-bn="রোগী এবং দর্শনার্থীদের জন্য পর্যাপ্ত পার্কিং স্থান">Ample parking space for patients and visitors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-bn="যোগাযোগ করুন">Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-en="Srinangar, Chapra, West Bengal- 741123, India" data-bn="শ্রীনানগর, চাপড়া, পশ্চিমবঙ্গ- 741123, ভারত">Srinangar, Chapra, West Bengal- 741123, India</span></p>
+                        <p><i class="fas fa-phone"></i> +91-8000-XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@chapragramin.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-bn="দ্রুত লিংক">Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                        <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+                        <li><a href="doctors.html" data-en="Our Doctors" data-bn="আমাদের ডাক্তার">Our Doctors</a></li>
+                        <li><button onclick="showComplaintModal()" data-en="Complaint" data-bn="অভিযোগ">Complaint</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Emergency Help" data-bn="জরুরি সাহায্য">Emergency Help</h4>
+                    <div class="emergency-actions">
+                        <button class="btn btn-danger" onclick="callAmbulance()" data-en="Call Ambulance" data-bn="অ্যাম্বুলেন্স কল করুন">Call Ambulance</button>
+                        <p data-en="Available 24/7" data-bn="২৪/৭ উপলব্ধ">Available 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2024 Chapra Gramin Hospital. All rights reserved to Rokon. made with love for my people and community.❤️" data-bn="© ২০২৪ চাপড়া গ্রামীণ হাসপাতাল। সর্বস্বত্ব রোকনের কাছে সংরক্ষিত। আমার মানুষ এবং সম্প্রদায়ের প্রতি ভালোবাসা থেকে তৈরি।❤️">© 2024 Chapra Gramin Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include all modals from index.html -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h3 data-en="Login" data-bn="লগইন">Login</h3>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label data-en="Email/Phone" data-bn="ইমেইল/ফোন">Email/Phone</label>
+                    <input type="text" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Login" data-bn="লগইন">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h3 data-en="Sign Up" data-bn="সাইন আপ">Sign Up</h3>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label data-en="Full Name" data-bn="পূর্ণ নাম">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email" data-bn="ইমেইল">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Phone" data-bn="ফোন">Phone</label>
+                    <input type="tel" id="signupPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Complaint Modal -->
+    <div id="complaintModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('complaintModal')">&times;</span>
+            <h3 data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</h3>
+            <form id="complaintForm" onsubmit="handleComplaint(event)">
+                <div class="form-group">
+                    <label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
+                    <input type="text" id="complaintName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="complaintPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Category" data-bn="অভিযোগের বিভাগ">Complaint Category</label>
+                    <select id="complaintCategory" required>
+                        <option value="" data-en="Select Category" data-bn="বিভাগ নির্বাচন করুন">Select Category</option>
+                        <option value="service" data-en="Service Quality" data-bn="সেবার মান">Service Quality</option>
+                        <option value="staff" data-en="Staff Behavior" data-bn="কর্মচারীদের আচরণ">Staff Behavior</option>
+                        <option value="facility" data-en="Facility Issues" data-bn="সুবিধার সমস্যা">Facility Issues</option>
+                        <option value="billing" data-en="Billing Issues" data-bn="বিলিং সমস্যা">Billing Issues</option>
+                        <option value="other" data-en="Other" data-bn="অন্যান্য">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Details" data-bn="অভিযোগের বিস্তারিত">Complaint Details</label>
+                    <textarea id="complaintDetails" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <span id="notificationMessage"></span>
+        <button onclick="closeNotification()">&times;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

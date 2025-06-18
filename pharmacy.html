@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - Chapra Gramin Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language and Theme Controls -->
+    <div class="top-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">English</button>
+                    <button id="lang-bn" class="lang-btn">বাংলা</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hospital"></i>
+                    <div class="logo-text">
+                        <h1 data-en="Chapra Gramin Hospital" data-bn="চাপড়া গ্রামীণ হাসপাতাল">Chapra Gramin Hospital</h1>
+                        <p data-en="Quality Healthcare for All" data-bn="সবার জন্য মানসম্মত স্বাস্থ্যসেবা">Quality Healthcare for All</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="emergency-contact">
+                        <i class="fas fa-ambulance"></i>
+                        <div>
+                            <span data-en="Emergency" data-bn="জরুরি">Emergency</span>
+                            <strong>+91-8000-XXXX</strong>
+                        </div>
+                    </div>
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" onclick="showLoginModal()" data-en="Login" data-bn="লগইন">Login</button>
+                        <button class="btn btn-primary" onclick="showSignupModal()" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-bn="হোম">Home</a></li>
+                <li><a href="infrastructure.html" data-en="Infrastructure" data-bn="অবকাঠামো">Infrastructure</a></li>
+                <li><a href="doctors.html" data-en="Doctors" data-bn="ডাক্তার">Doctors</a></li>
+                <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                <li><a href="facilities.html" data-en="Facilities" data-bn="সুবিধা">Facilities</a></li>
+                <li><a href="pharmacy.html" class="active" data-en="Pharmacy" data-bn="ফার্মেসি">Pharmacy</a></li>
+                <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-en="Hospital Pharmacy" data-bn="হাসপাতাল ফার্মেসি">Hospital Pharmacy</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html" data-en="Home" data-bn="হোম">Home</a> / 
+                    <span data-en="Pharmacy" data-bn="ফার্মেসি">Pharmacy</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Pharmacy Overview -->
+        <section class="pharmacy-overview">
+            <div class="container">
+                <div class="pharmacy-intro">
+                    <div class="pharmacy-info">
+                        <h2 data-en="24/7 Pharmacy Services" data-bn="২৪/৭ ফার্মেসি সেবা">24/7 Pharmacy Services</h2>
+                        <p data-en="Our hospital pharmacy is open round the clock to serve patients with quality medicines and healthcare products. We maintain a comprehensive stock of essential medicines and medical supplies." data-bn="আমাদের হাসপাতাল ফার্মেসি মানসম্মত ওষুধ এবং স্বাস্থ্যসেবা পণ্য দিয়ে রোগীদের সেবা করার জন্য চব্বিশ ঘন্টা খোলা থাকে। আমরা প্রয়োজনীয় ওষুধ এবং চিকিৎসা সরবরাহের একটি ব্যাপক স্টক বজায় রাখি।">Our hospital pharmacy is open round the clock to serve patients with quality medicines and healthcare products. We maintain a comprehensive stock of essential medicines and medical supplies.</p>
+                        
+                        <div class="pharmacy-features">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span data-en="24/7 Service" data-bn="২৪/৭ সেবা">24/7 Service</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span data-en="Quality Assured" data-bn="মান নিশ্চিত">Quality Assured</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user-md"></i>
+                                <span data-en="Expert Pharmacists" data-bn="বিশেষজ্ঞ ফার্মাসিস্ট">Expert Pharmacists</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tags"></i>
+                                <span data-en="Competitive Prices" data-bn="প্রতিযোগিতামূলক দাম">Competitive Prices</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pharmacy-image">
+                        <img src="https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg" alt="Pharmacy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medicine Categories -->
+        <section class="medicine-categories">
+            <div class="container">
+                <h2 data-en="Medicine Categories" data-bn="ওষুধের বিভাগ">Medicine Categories</h2>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all" data-en="All Medicines" data-bn="সকল ওষুধ">All Medicines</button>
+                    <button class="filter-btn" data-category="prescription" data-en="Prescription" data-bn="প্রেসক্রিপশন">Prescription</button>
+                    <button class="filter-btn" data-category="otc" data-en="Over-the-Counter" data-bn="কাউন্টারের উপর">Over-the-Counter</button>
+                    <button class="filter-btn" data-category="emergency" data-en="Emergency" data-bn="জরুরি">Emergency</button>
+                    <button class="filter-btn" data-category="chronic" data-en="Chronic Care" data-bn="দীর্ঘমেয়াদী যত্ন">Chronic Care</button>
+                </div>
+
+                <div class="medicines-grid">
+                    <!-- Prescription Medicines -->
+                    <div class="medicine-card" data-category="prescription">
+                        <div class="medicine-icon">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                        </div>
+                        <div class="medicine-info">
+                            <h3 data-en="Antibiotics" data-bn="অ্যান্টিবায়োটিক">Antibiotics</h3>
+                            <p data-en="Wide range of antibiotics for bacterial infections" data-bn="ব্যাকটেরিয়া সংক্রমণের জন্য বিস্তৃত অ্যান্টিবায়োটিক">Wide range of antibiotics for bacterial infections</p>
+                            <div class="medicine-examples">
+                                <span>Amoxicillin</span>
+                                <span>Azithromycin</span>
+                                <span>Ciprofloxacin</span>
+                                <span>Cephalexin</span>
+                            </div>
+                            <p class="prescription-note" data-en="*Prescription Required" data-bn="*প্রেসক্রিপশন প্রয়োজন">*Prescription Required</p>
+                        </div>
+                    </div>
+
+                    <div class="medicine-card" data-category="prescription">
+                        <div class="medicine-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="medicine-info">
+                            <h3 data-en="Cardiac Medicines" data-bn="হৃদরোগের ওষুধ">Cardiac Medicines</h3>
+                            <p data-en="Medications for heart conditions and blood pressure" data-bn="হৃদরোগ এবং রক্তচাপের জন্য ওষুধ">Medications for heart conditions and blood pressure</p>
+                            <div class="medicine-examples">
+                                <span>Atenolol</span>
+                                <span>Amlodipine</span>
+                                <span>Enalapril</span>
+                                <span>Metoprolol</span>
+                            </div>
+                            <p class="prescription-note" data-en="*Prescription Required" data-bn="*প্রেসক্রিপশন প্রয়োজন">*Prescription Required</p>
+                        </div>
+                    </div>
+
+                    <!-- OTC Medicines -->
+                    <div class="medicine-card" data-category="otc">
+                        <div class="medicine-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="medicine-info">
+                            <h3 data-en="Pain Relief" data-bn="ব্যথা উপশম">Pain Relief</h3>
+                            <p data-en="Over-the-counter pain relievers and fever reducers" data-bn="কাউন্টারের উপর ব্যথা উপশমকারী এবং জ্বর কমানোর ওষুধ">Over-the-counter pain relievers and fever reducers</p>
+                            <div class="medicine-examples">
+                                <span>Paracetamol</span>
+                                <span>Ibuprofen</span>
+                                <span>Aspirin</span>
+                                <span>Diclofenac</span>
+                            </div>
+                            <p class="otc-note" data-en="Available without prescription" data-bn="প্রেসক্রিপশন ছাড়াই উপলব্ধ">Available without prescription</p>
+                        </div>
+                    </div>
+
+                    <div class="medicine-card" data-category="otc">
+                        <div class="medicine-icon">
+                            <i class="fas fa-stomach"></i>
+                        </div>
+                        <div class="medicine-info">
+                            <h3 data-en="Digestive Health" data-bn="পাচনতন্ত্রের স্বাস্থ্য">Digestive Health</h3>
+                            <p data-en="Medicines for stomach and digestive issues" data-bn="পেট এবং পাচনতন্ত্রের সমস্যার জন্য ওষুধ">Medicines for stomach and digestive issues</p>
+                            <div class="medicine-examples">
+                                <span>Omeprazole</span>
+                                <span>Antacids</span>
+                                <span>ORS</span>
+                                <span>Probiotics</span>
+                            </div>
+                            <p class="otc-note" data-en="Available without prescription" data-bn="প্রেসক্রিপশন ছাড়াই উপলব্ধ">Available without prescription</p>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Medicines -->
+                    <div class="medicine-card" data-category="emergency">
+                        <div class="medicine-icon">
+                            <i class="fas fa-first-aid"></i>
+                        </div>
+                        <div class="medicine-info">
+                            <h3 data-en="Emergency Drugs" data-bn="জরুরি ওষুধ">Emergency Drugs</h3>
+                            <p data-en="Life-saving medications for emergency situations" data-bn="জরুরি পরিস্থিতির জন্য জীবনরক্ষাকারী ওষুধ">Life-saving medications for emergency situations</p>
+                            <div class="medicine-examples">
+                                <span>Adrenaline</span>
+                                <span>Atropine</span>
+                                <span>Dopamine</span>
+                                <span>Naloxone</span>
+                            </div>
+                            <p class="emergency-note" data-en="For emergency use only" data-bn="শুধুমাত্র জরুরি ব্যবহারের জন্য">For emergency use only</p>
+                        </div>
+                    </div>
+
+                    <!-- Chronic Care -->
+                    <div class="medicine-card" data-category="chronic">
+                        <div class="medicine-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="medicine-info">
+                            <h3 data-en="Diabetes Care" data-bn="ডায়াবেটিস যত্ন">Diabetes Care</h3>
+                            <p data-en="Medications and supplies for diabetes management" data-bn="ডায়াবেটিস ব্যবস্থাপনার জন্য ওষুধ এবং সরবরাহ">Medications and supplies for diabetes management</p>
+                            <div class="medicine-examples">
+                                <span>Metformin</span>
+                                <span>Insulin</span>
+                                <span>Glimepiride</span>
+                                <span>Test Strips</span>
+                            </div>
+                            <p class="prescription-note" data-en="*Prescription Required" data-bn="*প্রেসক্রিপশন প্রয়োজন">*Prescription Required</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Supplies -->
+        <section class="medical-supplies">
+            <div class="container">
+                <h2 data-en="Medical Supplies & Equipment" data-bn="চিকিৎসা সরবরাহ এবং সরঞ্জাম">Medical Supplies & Equipment</h2>
+                <div class="supplies-grid">
+                    <div class="supply-category">
+                        <h3 data-en="Diagnostic Supplies" data-bn="ডায়াগনস্টিক সরবরাহ">Diagnostic Supplies</h3>
+                        <ul>
+                            <li data-en="Blood glucose test strips" data-bn="রক্তের গ্লুকোজ টেস্ট স্ট্রিপ">Blood glucose test strips</li>
+                            <li data-en="Pregnancy test kits" data-bn="গর্ভাবস্থা পরীক্ষার কিট">Pregnancy test kits</li>
+                            <li data-en="Thermometers" data-bn="থার্মোমিটার">Thermometers</li>
+                            <li data-en="Blood pressure monitors" data-bn="রক্তচাপ মনিটর">Blood pressure monitors</li>
+                        </ul>
+                    </div>
+
+                    <div class="supply-category">
+                        <h3 data-en="First Aid Supplies" data-bn="প্রাথমিক চিকিৎসা সরবরাহ">First Aid Supplies</h3>
+                        <ul>
+                            <li data-en="Bandages and gauze" data-bn="ব্যান্ডেজ এবং গজ">Bandages and gauze</li>
+                            <li data-en="Antiseptic solutions" data-bn="অ্যান্টিসেপটিক সমাধান">Antiseptic solutions</li>
+                            <li data-en="Surgical tape" data-bn="সার্জিক্যাল টেপ">Surgical tape</li>
+                            <li data-en="Disposable gloves" data-bn="ডিসপোজেবল গ্লাভস">Disposable gloves</li>
+                        </ul>
+                    </div>
+
+                    <div class="supply-category">
+                        <h3 data-en="Personal Care" data-bn="ব্যক্তিগত যত্ন">Personal Care</h3>
+                        <ul>
+                            <li data-en="Hand sanitizers" data-bn="হ্যান্ড স্যানিটাইজার">Hand sanitizers</li>
+                            <li data-en="Face masks" data-bn="ফেস মাস্ক">Face masks</li>
+                            <li data-en="Wheelchairs" data-bn="হুইলচেয়ার">Wheelchairs</li>
+                            <li data-en="Walking aids" data-bn="হাঁটার সহায়ক">Walking aids</li>
+                        </ul>
+                    </div>
+
+                    <div class="supply-category">
+                        <h3 data-en="Baby Care" data-bn="শিশু যত্ন">Baby Care</h3>
+                        <ul>
+                            <li data-en="Baby formula" data-bn="শিশুর ফর্মুলা">Baby formula</li>
+                            <li data-en="Diapers" data-bn="ডায়াপার">Diapers</li>
+                            <li data-en="Baby care products" data-bn="শিশু যত্ন পণ্য">Baby care products</li>
+                            <li data-en="Feeding bottles" data-bn="ফিডিং বোতল">Feeding bottles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pharmacy Services -->
+        <section class="pharmacy-services">
+            <div class="container">
+                <h2 data-en="Our Services" data-bn="আমাদের সেবা">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-prescription"></i>
+                        </div>
+                        <h3 data-en="Prescription Filling" data-bn="প্রেসক্রিপশন পূরণ">Prescription Filling</h3>
+                        <p data-en="Quick and accurate prescription filling service with quality medicines from trusted manufacturers." data-bn="বিশ্বস্ত প্রস্তুতকারকদের কাছ থেকে মানসম্মত ওষুধ সহ দ্রুত এবং সঠিক প্রেসক্রিপশন পূরণ সেবা।">Quick and accurate prescription filling service with quality medicines from trusted manufacturers.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 data-en="Medication Counseling" data-bn="ওষুধ পরামর্শ">Medication Counseling</h3>
+                        <p data-en="Expert pharmacist consultation on proper medication usage, dosage, and potential side effects." data-bn="সঠিক ওষুধ ব্যবহার, ডোজ এবং সম্ভাব্য পার্শ্বপ্রতিক্রিয়া সম্পর্কে বিশেষজ্ঞ ফার্মাসিস্ট পরামর্শ।">Expert pharmacist consultation on proper medication usage, dosage, and potential side effects.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 data-en="Home Delivery" data-bn="হোম ডেলিভারি">Home Delivery</h3>
+                        <p data-en="Convenient home delivery service for patients who cannot visit the pharmacy in person." data-bn="যে রোগীরা ব্যক্তিগতভাবে ফার্মেসিতে যেতে পারেন না তাদের জন্য সুবিধাজনক হোম ডেলিভারি সেবা।">Convenient home delivery service for patients who cannot visit the pharmacy in person.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 data-en="Prescription Refills" data-bn="প্রেসক্রিপশন রিফিল">Prescription Refills</h3>
+                        <p data-en="Easy prescription refill service for chronic medications with automated reminders." data-bn="স্বয়ংক্রিয় অনুস্মারক সহ দীর্ঘমেয়াদী ওষুধের জন্য সহজ প্রেসক্রিপশন রিফিল সেবা।">Easy prescription refill service for chronic medications with automated reminders.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-en="Medicine Verification" data-bn="ওষুধ যাচাইকরণ">Medicine Verification</h3>
+                        <p data-en="Verification of medicine authenticity and quality to ensure patient safety." data-bn="রোগীর নিরাপত্তা নিশ্চিত করতে ওষুধের সত্যতা এবং গুণমান যাচাইকরণ।">Verification of medicine authenticity and quality to ensure patient safety.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 data-en="Insurance Claims" data-bn="বীমা দাবি">Insurance Claims</h3>
+                        <p data-en="Assistance with insurance claims and cashless transactions for eligible patients." data-bn="যোগ্য রোগীদের জন্য বীমা দাবি এবং নগদহীন লেনদেনে সহায়তা।">Assistance with insurance claims and cashless transactions for eligible patients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Pharmacy -->
+        <section class="contact-pharmacy">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 data-en="Contact Our Pharmacy" data-bn="আমাদের ফার্মেসির সাথে যোগাযোগ করুন">Contact Our Pharmacy</h2>
+                        <p data-en="Have questions about your medications or need assistance? Our pharmacists are here to help." data-bn="আপনার ওষুধ সম্পর্কে প্রশ্ন আছে বা সহায়তা প্রয়োজন? আমাদের ফার্মাসিস্টরা সাহায্য করতে এখানে আছেন।">Have questions about your medications or need assistance? Our pharmacists are here to help.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4 data-en="Pharmacy Direct Line" data-bn="ফার্মেসি সরাসরি লাইন">Pharmacy Direct Line</h4>
+                                    <p>+91-8000-XXXX (Ext: 101)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4 data-en="Operating Hours" data-bn="পরিচালনার সময়">Operating Hours</h4>
+                                    <p data-en="24 Hours / 7 Days a Week" data-bn="২৪ ঘন্টা / সপ্তাহে ৭ দিন">24 Hours / 7 Days a Week</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4 data-en="Location" data-bn="অবস্থান">Location</h4>
+                                    <p data-en="Ground Floor, Main Building" data-bn="গ্রাউন্ড ফ্লোর, মূল ভবন">Ground Floor, Main Building</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pharmacy-hours">
+                        <h3 data-en="Pharmacy Hours" data-bn="ফার্মেসির সময়">Pharmacy Hours</h3>
+                        <div class="hours-table">
+                            <div class="hours-row">
+                                <span data-en="Monday - Sunday" data-bn="সোমবার - রবিবার">Monday - Sunday</span>
+                                <span>24 Hours</span>
+                            </div>
+                            <div class="hours-row">
+                                <span data-en="Emergency Service" data-bn="জরুরি সেবা">Emergency Service</span>
+                                <span data-en="Always Available" data-bn="সর্বদা উপলব্ধ">Always Available</span>
+                            </div>
+                            <div class="hours-row">
+                                <span data-en="Home Delivery" data-bn="হোম ডেলিভারি">Home Delivery</span>
+                                <span>8 AM - 8 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-bn="যোগাযোগ করুন">Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-en="Srinangar, Chapra, West Bengal- 741123, India" data-bn="শ্রীনানগর, চাপড়া, পশ্চিমবঙ্গ- 741123, ভারত">Srinangar, Chapra, West Bengal- 741123, India</span></p>
+                        <p><i class="fas fa-phone"></i> +91-8000-XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@chapragramin.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-bn="দ্রুত লিংক">Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                        <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+                        <li><a href="doctors.html" data-en="Our Doctors" data-bn="আমাদের ডাক্তার">Our Doctors</a></li>
+                        <li><button onclick="showComplaintModal()" data-en="Complaint" data-bn="অভিযোগ">Complaint</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Emergency Help" data-bn="জরুরি সাহায্য">Emergency Help</h4>
+                    <div class="emergency-actions">
+                        <button class="btn btn-danger" onclick="callAmbulance()" data-en="Call Ambulance" data-bn="অ্যাম্বুলেন্স কল করুন">Call Ambulance</button>
+                        <p data-en="Available 24/7" data-bn="২৪/৭ উপলব্ধ">Available 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2024 Chapra Gramin Hospital. All rights reserved to Rokon. made with love for my people and community.❤️" data-bn="© ২০২৪ চাপড়া গ্রামীণ হাসপাতাল। সর্বস্বত্ব রোকনের কাছে সংরক্ষিত। আমার মানুষ এবং সম্প্রদায়ের প্রতি ভালোবাসা থেকে তৈরি।❤️">© 2024 Chapra Gramin Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include all modals -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h3 data-en="Login" data-bn="লগইন">Login</h3>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label data-en="Email/Phone" data-bn="ইমেইল/ফোন">Email/Phone</label>
+                    <input type="text" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Login" data-bn="লগইন">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h3 data-en="Sign Up" data-bn="সাইন আপ">Sign Up</h3>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label data-en="Full Name" data-bn="পূর্ণ নাম">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email" data-bn="ইমেইল">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Phone" data-bn="ফোন">Phone</label>
+                    <input type="tel" id="signupPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Complaint Modal -->
+    <div id="complaintModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('complaintModal')">&times;</span>
+            <h3 data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</h3>
+            <form id="complaintForm" onsubmit="handleComplaint(event)">
+                <div class="form-group">
+                    <label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
+                    <input type="text" id="complaintName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="complaintPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Category" data-bn="অভিযোগের বিভাগ">Complaint Category</label>
+                    <select id="complaintCategory" required>
+                        <option value="" data-en="Select Category" data-bn="বিভাগ নির্বাচন করুন">Select Category</option>
+                        <option value="service" data-en="Service Quality" data-bn="সেবার মান">Service Quality</option>
+                        <option value="staff" data-en="Staff Behavior" data-bn="কর্মচারীদের আচরণ">Staff Behavior</option>
+                        <option value="facility" data-en="Facility Issues" data-bn="সুবিধার সমস্যা">Facility Issues</option>
+                        <option value="billing" data-en="Billing Issues" data-bn="বিলিং সমস্যা">Billing Issues</option>
+                        <option value="other" data-en="Other" data-bn="অন্যান্য">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Details" data-bn="অভিযোগের বিস্তারিত">Complaint Details</label>
+                    <textarea id="complaintDetails" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <span id="notificationMessage"></span>
+        <button onclick="closeNotification()">&times;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/pharmacy.js"></script>
+</body>
+</html>

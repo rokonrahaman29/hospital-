@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Chapra Gramin Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language and Theme Controls -->
+    <div class="top-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">English</button>
+                    <button id="lang-bn" class="lang-btn">বাংলা</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hospital"></i>
+                    <div class="logo-text">
+                        <h1 data-en="Chapra Gramin Hospital" data-bn="চাপড়া গ্রামীণ হাসপাতাল">Chapra Gramin Hospital</h1>
+                        <p data-en="Quality Healthcare for All" data-bn="সবার জন্য মানসম্মত স্বাস্থ্যসেবা">Quality Healthcare for All</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="emergency-contact">
+                        <i class="fas fa-ambulance"></i>
+                        <div>
+                            <span data-en="Emergency" data-bn="জরুরি">Emergency</span>
+                            <strong>+91-8000-XXXX</strong>
+                        </div>
+                    </div>
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" onclick="showLoginModal()" data-en="Login" data-bn="লগইন">Login</button>
+                        <button class="btn btn-primary" onclick="showSignupModal()" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-bn="হোম">Home</a></li>
+                <li><a href="infrastructure.html" data-en="Infrastructure" data-bn="অবকাঠামো">Infrastructure</a></li>
+                <li><a href="doctors.html" data-en="Doctors" data-bn="ডাক্তার">Doctors</a></li>
+                <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                <li><a href="facilities.html" data-en="Facilities" data-bn="সুবিধা">Facilities</a></li>
+                <li><a href="pharmacy.html" data-en="Pharmacy" data-bn="ফার্মেসি">Pharmacy</a></li>
+                <li><a href="services.html" class="active" data-en="Services" data-bn="সেবা">Services</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-en="Our Services" data-bn="আমাদের সেবা">Our Services</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html" data-en="Home" data-bn="হোম">Home</a> / 
+                    <span data-en="Services" data-bn="সেবা">Services</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-intro">
+                    <h2 data-en="Comprehensive Healthcare Services" data-bn="ব্যাপক স্বাস্থ্যসেবা">Comprehensive Healthcare Services</h2>
+                    <p data-en="We provide a wide range of healthcare services and administrative support to serve our community better." data-bn="আমরা আমাদের সম্প্রদায়কে আরও ভাল সেবা দেওয়ার জন্য বিস্তৃত স্বাস্থ্যসেবা এবং প্রশাসনিক সহায়তা প্রদান করি।">We provide a wide range of healthcare services and administrative support to serve our community better.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Services -->
+        <section class="medical-services">
+            <div class="container">
+                <h2 data-en="Medical Services" data-bn="চিকিৎসা সেবা">Medical Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 data-en="General Medicine" data-bn="সাধারণ চিকিৎসা">General Medicine</h3>
+                        <p data-en="Comprehensive primary healthcare services for common illnesses and health maintenance." data-bn="সাধারণ অসুস্থতা এবং স্বাস্থ্য রক্ষণাবেক্ষণের জন্য ব্যাপক প্রাথমিক স্বাস্থ্যসেবা।">Comprehensive primary healthcare services for common illnesses and health maintenance.</p>
+                        <ul>
+                            <li data-en="Routine check-ups" data-bn="নিয়মিত চেক-আপ">Routine check-ups</li>
+                            <li data-en="Fever and infection treatment" data-bn="জ্বর এবং সংক্রমণ চিকিৎসা">Fever and infection treatment</li>
+                            <li data-en="Chronic disease management" data-bn="দীর্ঘমেয়াদী রোগ ব্যবস্থাপনা">Chronic disease management</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 data-en="Cardiology" data-bn="হৃদরোগ">Cardiology</h3>
+                        <p data-en="Specialized cardiac care including diagnosis and treatment of heart conditions." data-bn="হৃদরোগের নির্ণয় এবং চিকিৎসা সহ বিশেষায়িত কার্ডিয়াক যত্ন।">Specialized cardiac care including diagnosis and treatment of heart conditions.</p>
+                        <ul>
+                            <li data-en="ECG and Echo tests" data-bn="ইসিজি এবং ইকো পরীক্ষা">ECG and Echo tests</li>
+                            <li data-en="Blood pressure management" data-bn="রক্তচাপ ব্যবস্থাপনা">Blood pressure management</li>
+                            <li data-en="Cardiac rehabilitation" data-bn="কার্ডিয়াক পুনর্বাসন">Cardiac rehabilitation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3 data-en="Orthopedics" data-bn="অর্থোপেডিক্স">Orthopedics</h3>
+                        <p data-en="Treatment of bone, joint, and muscle disorders with modern surgical techniques." data-bn="আধুনিক সার্জিক্যাল কৌশল সহ হাড়, জয়েন্ট এবং পেশীর ব্যাধির চিকিৎসা।">Treatment of bone, joint, and muscle disorders with modern surgical techniques.</p>
+                        <ul>
+                            <li data-en="Fracture treatment" data-bn="ফ্র্যাকচার চিকিৎসা">Fracture treatment</li>
+                            <li data-en="Joint replacement surgery" data-bn="জয়েন্ট রিপ্লেসমেন্ট সার্জারি">Joint replacement surgery</li>
+                            <li data-en="Sports injury treatment" data-bn="খেলাধুলার আঘাত চিকিৎসা">Sports injury treatment</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 data-en="Pediatrics" data-bn="শিশু চিকিৎসা">Pediatrics</h3>
+                        <p data-en="Specialized healthcare services for infants, children, and adolescents." data-bn="শিশু, শিশু এবং কিশোর-কিশোরীদের জন্য বিশেষায়িত স্বাস্থ্যসেবা।">Specialized healthcare services for infants, children, and adolescents.</p>
+                        <ul>
+                            <li data-en="Child vaccination" data-bn="শিশু টিকাদান">Child vaccination</li>
+                            <li data-en="Growth monitoring" data-bn="বৃদ্ধি পর্যবেক্ষণ">Growth monitoring</li>
+                            <li data-en="Pediatric emergency care" data-bn="শিশু জরুরি যত্ন">Pediatric emergency care</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 data-en="Gynecology" data-bn="স্ত্রীরোগ">Gynecology</h3>
+                        <p data-en="Women's health services including pregnancy care and gynecological treatments." data-bn="গর্ভাবস্থার যত্ন এবং স্ত্রীরোগ চিকিৎসা সহ মহিলাদের স্বাস্থ্য সেবা।">Women's health services including pregnancy care and gynecological treatments.</p>
+                        <ul>
+                            <li data-en="Prenatal care" data-bn="প্রসবপূর্ব যত্ন">Prenatal care</li>
+                            <li data-en="Normal and cesarean delivery" data-bn="স্বাভাবিক এবং সিজারিয়ান ডেলিভারি">Normal and cesarean delivery</li>
+                            <li data-en="Family planning services" data-bn="পরিবার পরিকল্পনা সেবা">Family planning services</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3 data-en="Emergency Services" data-bn="জরুরি সেবা">Emergency Services</h3>
+                        <p data-en="24/7 emergency medical care with rapid response and life-saving treatments." data-bn="দ্রুত প্রতিক্রিয়া এবং জীবনরক্ষাকারী চিকিৎসা সহ ২৪/৭ জরুরি চিকিৎসা সেবা।">24/7 emergency medical care with rapid response and life-saving treatments.</p>
+                        <ul>
+                            <li data-en="Trauma care" data-bn="ট্রমা কেয়ার">Trauma care</li>
+                            <li data-en="Ambulance services" data-bn="অ্যাম্বুলেন্স সেবা">Ambulance services</li>
+                            <li data-en="Critical care unit" data-bn="ক্রিটিক্যাল কেয়ার ইউনিট">Critical care unit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Administrative Services -->
+        <section class="administrative-services">
+            <div class="container">
+                <h2 data-en="Administrative Services" data-bn="প্রশাসনিক সেবা">Administrative Services</h2>
+                <div class="admin-services-grid">
+                    <div class="admin-service-card">
+                        <div class="admin-service-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="admin-service-content">
+                            <h3 data-en="Birth Certificate" data-bn="জন্ম সনদ">Birth Certificate</h3>
+                            <p data-en="Official birth certificate issuance for newborns delivered at our hospital." data-bn="আমাদের হাসপাতালে জন্মগ্রহণকারী নবজাতকদের জন্য অফিসিয়াল জন্ম সনদ প্রদান।">Official birth certificate issuance for newborns delivered at our hospital.</p>
+                            <div class="service-details">
+                                <h4 data-en="Required Documents:" data-bn="প্রয়োজনীয় কাগজপত্র:">Required Documents:</h4>
+                                <ul>
+                                    <li data-en="Hospital delivery record" data-bn="হাসপাতাল ডেলিভারি রেকর্ড">Hospital delivery record</li>
+                                    <li data-en="Parents' identification" data-bn="পিতামাতার পরিচয়পত্র">Parents' identification</li>
+                                    <li data-en="Marriage certificate (if applicable)" data-bn="বিবাহের সনদ (যদি প্রযোজ্য হয়)">Marriage certificate (if applicable)</li>
+                                </ul>
+                                <p class="processing-time" data-en="Processing Time: 2-3 working days" data-bn="প্রক্রিয়াকরণের সময়: ২-৩ কার্যদিবস">Processing Time: 2-3 working days</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="showBirthCertificateModal()" data-en="Apply Now" data-bn="এখনই আবেদন করুন">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <div class="admin-service-card">
+                        <div class="admin-service-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <div class="admin-service-content">
+                            <h3 data-en="Death Certificate" data-bn="মৃত্যু সনদ">Death Certificate</h3>
+                            <p data-en="Official death certificate for patients who passed away at our hospital." data-bn="আমাদের হাসপাতালে মৃত্যুবরণকারী রোগীদের জন্য অফিসিয়াল মৃত্যু সনদ।">Official death certificate for patients who passed away at our hospital.</p>
+                            <div class="service-details">
+                                <h4 data-en="Required Documents:" data-bn="প্রয়োজনীয় কাগজপত্র:">Required Documents:</h4>
+                                <ul>
+                                    <li data-en="Hospital death record" data-bn="হাসপাতাল মৃত্যু রেকর্ড">Hospital death record</li>
+                                    <li data-en="Family member identification" data-bn="পরিবারের সদস্যের পরিচয়পত্র">Family member identification</li>
+                                    <li data-en="Relationship proof" data-bn="সম্পর্কের প্রমাণ">Relationship proof</li>
+                                </ul>
+                                <p class="processing-time" data-en="Processing Time: 1-2 working days" data-bn="প্রক্রিয়াকরণের সময়: ১-২ কার্যদিবস">Processing Time: 1-2 working days</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="showDeathCertificateModal()" data-en="Apply Now" data-bn="এখনই আবেদন করুন">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <div class="admin-service-card">
+                        <div class="admin-service-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="admin-service-content">
+                            <h3 data-en="Swasthya Sathi Registration" data-bn="স্বাস্থ্য সাথী নিবন্ধন">Swasthya Sathi Registration</h3>
+                            <p data-en="Registration for West Bengal government's health insurance scheme for free medical treatment." data-bn="বিনামূল্যে চিকিৎসার জন্য পশ্চিমবঙ্গ সরকারের স্বাস্থ্য বীমা প্রকল্পের জন্য নিবন্ধন।">Registration for West Bengal government's health insurance scheme for free medical treatment.</p>
+                            <div class="service-details">
+                                <h4 data-en="Required Documents:" data-bn="প্রয়োজনীয় কাগজপত্র:">Required Documents:</h4>
+                                <ul>
+                                    <li data-en="Aadhaar card" data-bn="আধার কার্ড">Aadhaar card</li>
+                                    <li data-en="Ration card" data-bn="রেশন কার্ড">Ration card</li>
+                                    <li data-en="Bank account details" data-bn="ব্যাংক অ্যাকাউন্টের বিবরণ">Bank account details</li>
+                                    <li data-en="Income certificate" data-bn="আয়ের সনদ">Income certificate</li>
+                                </ul>
+                                <p class="processing-time" data-en="Processing Time: 7-10 working days" data-bn="প্রক্রিয়াকরণের সময়: ৭-১০ কার্যদিবস">Processing Time: 7-10 working days</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="showSwasthyaSathiModal()" data-en="Register Now" data-bn="এখনই নিবন্ধন করুন">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vaccination Services -->
+        <section class="vaccination-services">
+            <div class="container">
+                <h2 data-en="Vaccination Services" data-bn="টিকাকরণ সেবা">Vaccination Services</h2>
+                <div class="vaccination-content">
+                    <div class="vaccination-info">
+                        <h3 data-en="Comprehensive Vaccination Program" data-bn="ব্যাপক টিকাকরণ কর্মসূচি">Comprehensive Vaccination Program</h3>
+                        <p data-en="We provide a complete range of vaccination services for all age groups, following national immunization guidelines." data-bn="আমরা জাতীয় টিকাদান নির্দেশিকা অনুসরণ করে সকল বয়সের জন্য সম্পূর্ণ টিকাকরণ সেবা প্রদান করি।">We provide a complete range of vaccination services for all age groups, following national immunization guidelines.</p>
+                        
+                        <div class="vaccination-categories">
+                            <div class="vaccine-category">
+                                <h4 data-en="Child Vaccination" data-bn="শিশু টিকাকরণ">Child Vaccination</h4>
+                                <ul>
+                                    <li data-en="BCG, DPT, Polio vaccines" data-bn="বিসিজি, ডিপিটি, পোলিও টিকা">BCG, DPT, Polio vaccines</li>
+                                    <li data-en="Measles, MMR vaccines" data-bn="হাম, এমএমআর টিকা">Measles, MMR vaccines</li>
+                                    <li data-en="Hepatitis B vaccine" data-bn="হেপাটাইটিস বি টিকা">Hepatitis B vaccine</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="vaccine-category">
+                                <h4 data-en="Adult Vaccination" data-bn="প্রাপ্তবয়স্ক টিকাকরণ">Adult Vaccination</h4>
+                                <ul>
+                                    <li data-en="COVID-19 vaccines" data-bn="কোভিড-১৯ টিকা">COVID-19 vaccines</li>
+                                    <li data-en="Influenza vaccine" data-bn="ইনফ্লুয়েঞ্জা টিকা">Influenza vaccine</li>
+                                    <li data-en="Tetanus booster" data-bn="টিটেনাস বুস্টার">Tetanus booster</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="vaccination-schedule">
+                            <h4 data-en="Vaccination Schedule" data-bn="টিকাকরণের সময়সূচী">Vaccination Schedule</h4>
+                            <p data-en="Monday to Saturday: 9:00 AM - 5:00 PM" data-bn="সোমবার থেকে শনিবার: সকাল ৯টা - বিকাল ৫টা">Monday to Saturday: 9:00 AM - 5:00 PM</p>
+                            <p data-en="Sunday: 9:00 AM - 1:00 PM (Emergency only)" data-bn="রবিবার: সকাল ৯টা - দুপুর ১টা (শুধুমাত্র জরুরি)">Sunday: 9:00 AM - 1:00 PM (Emergency only)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="vaccination-image">
+                        <img src="https://images.pexels.com/photos/4021779/pexels-photo-4021779.jpeg" alt="Vaccination">
+                    </div>
+                </div>
+                
+                <div class="vaccination-action">
+                    <button class="btn btn-primary btn-large" onclick="showVaccinationPopup()" data-en="Schedule Vaccination" data-bn="টিকাকরণের সময় নির্ধারণ করুন">Schedule Vaccination</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Services -->
+        <section class="additional-services">
+            <div class="container">
+                <h2 data-en="Additional Services" data-bn="অতিরিক্ত সেবা">Additional Services</h2>
+                <div class="additional-grid">
+                    <div class="additional-service">
+                        <i class="fas fa-microscope"></i>
+                        <h4 data-en="Laboratory Services" data-bn="ল্যাবরেটরি সেবা">Laboratory Services</h4>
+                        <p data-en="Complete diagnostic testing with modern equipment" data-bn="আধুনিক সরঞ্জাম সহ সম্পূর্ণ ডায়াগনস্টিক পরীক্ষা">Complete diagnostic testing with modern equipment</p>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <i class="fas fa-x-ray"></i>
+                        <h4 data-en="Radiology Services" data-bn="রেডিওলজি সেবা">Radiology Services</h4>
+                        <p data-en="X-ray, CT scan, MRI, and ultrasound services" data-bn="এক্স-রে, সিটি স্ক্যান, এমআরআই এবং আল্ট্রাসাউন্ড সেবা">X-ray, CT scan, MRI, and ultrasound services</p>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <i class="fas fa-pills"></i>
+                        <h4 data-en="24/7 Pharmacy" data-bn="২৪/৭ ফার্মেসি">24/7 Pharmacy</h4>
+                        <p data-en="Round-the-clock medicine availability" data-bn="চব্বিশ ঘন্টা ওষুধের প্রাপ্যতা">Round-the-clock medicine availability</p>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <i class="fas fa-wheelchair"></i>
+                        <h4 data-en="Physiotherapy" data-bn="ফিজিওথেরাপি">Physiotherapy</h4>
+                        <p data-en="Rehabilitation and physical therapy services" data-bn="পুনর্বাসন এবং ফিজিক্যাল থেরাপি সেবা">Rehabilitation and physical therapy services</p>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <i class="fas fa-utensils"></i>
+                        <h4 data-en="Dietary Services" data-bn="খাদ্য সেবা">Dietary Services</h4>
+                        <p data-en="Nutritious meals for patients and attendants" data-bn="রোগী এবং পরিচর্যাকারীদের জন্য পুষ্টিকর খাবার">Nutritious meals for patients and attendants</p>
+                    </div>
+                    
+                    <div class="additional-service">
+                        <i class="fas fa-bed"></i>
+                        <h4 data-en="Patient Accommodation" data-bn="রোগী থাকার ব্যবস্থা">Patient Accommodation</h4>
+                        <p data-en="Comfortable rooms for patient care and recovery" data-bn="রোগীর যত্ন এবং পুনরুদ্ধারের জন্য আরামদায়ক কক্ষ">Comfortable rooms for patient care and recovery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Contact Us" data-bn="যোগাযোগ করুন">Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-en="Srinangar, Chapra, West Bengal- 741123, India" data-bn="শ্রীনানগর, চাপড়া, পশ্চিমবঙ্গ- 741123, ভারত">Srinangar, Chapra, West Bengal- 741123, India</span></p>
+                        <p><i class="fas fa-phone"></i> +91-8000-XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@chapragramin.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-bn="দ্রুত লিংক">Quick Links</h4>
+                    <ul>
+                        <li><a href="appointment.html" data-en="Book Appointment" data-bn="অ্যাপয়েন্টমেন্ট">Book Appointment</a></li>
+                        <li><a href="services.html" data-en="Services" data-bn="সেবা">Services</a></li>
+                        <li><a href="doctors.html" data-en="Our Doctors" data-bn="আমাদের ডাক্তার">Our Doctors</a></li>
+                        <li><button onclick="showComplaintModal()" data-en="Complaint" data-bn="অভিযোগ">Complaint</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Emergency Help" data-bn="জরুরি সাহায্য">Emergency Help</h4>
+                    <div class="emergency-actions">
+                        <button class="btn btn-danger" onclick="callAmbulance()" data-en="Call Ambulance" data-bn="অ্যাম্বুলেন্স কল করুন">Call Ambulance</button>
+                        <p data-en="Available 24/7" data-bn="২৪/৭ উপলব্ধ">Available 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2024 Chapra Gramin Hospital. All rights reserved to Rokon. made with love for my people and community.❤️" data-bn="© ২০২৪ চাপড়া গ্রামীণ হাসপাতাল। সর্বস্বত্ব রোকনের কাছে সংরক্ষিত। আমার মানুষ এবং সম্প্রদায়ের প্রতি ভালোবাসা থেকে তৈরি।❤️">© 2024 Chapra Gramin Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- All Modals -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h3 data-en="Login" data-bn="লগইন">Login</h3>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label data-en="Email/Phone" data-bn="ইমেইল/ফোন">Email/Phone</label>
+                    <input type="text" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Login" data-bn="লগইন">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h3 data-en="Sign Up" data-bn="সাইন আপ">Sign Up</h3>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label data-en="Full Name" data-bn="পূর্ণ নাম">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email" data-bn="ইমেইল">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Phone" data-bn="ফোন">Phone</label>
+                    <input type="tel" id="signupPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Password" data-bn="পাসওয়ার্ড">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Sign Up" data-bn="সাইন আপ">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Birth Certificate Modal -->
+    <div id="birthCertificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('birthCertificateModal')">&times;</span>
+            <h3 data-en="Birth Certificate Application" data-bn="জন্ম সনদের আবেদন">Birth Certificate Application</h3>
+            <form id="birthCertificateForm" onsubmit="handleBirthCertificate(event)">
+                <div class="form-group">
+                    <label data-en="Child's Full Name" data-bn="শিশুর পূর্ণ নাম">Child's Full Name</label>
+                    <input type="text" id="childName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Date of Birth" data-bn="জন্ম তারিখ">Date of Birth</label>
+                    <input type="date" id="childDob" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Father's Name" data-bn="পিতার নাম">Father's Name</label>
+                    <input type="text" id="fatherName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Mother's Name" data-bn="মাতার নাম">Mother's Name</label>
+                    <input type="text" id="motherName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="birthContactPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Hospital Registration Number" data-bn="হাসপাতাল নিবন্ধন নম্বর">Hospital Registration Number</label>
+                    <input type="text" id="hospitalRegNumber" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Application" data-bn="আবেদন জমা দিন">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Death Certificate Modal -->
+    <div id="deathCertificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('deathCertificateModal')">&times;</span>
+            <h3 data-en="Death Certificate Application" data-bn="মৃত্যু সনদের আবেদন">Death Certificate Application</h3>
+            <form id="deathCertificateForm" onsubmit="handleDeathCertificate(event)">
+                <div class="form-group">
+                    <label data-en="Deceased's Full Name" data-bn="মৃত ব্যক্তির পূর্ণ নাম">Deceased's Full Name</label>
+                    <input type="text" id="deceasedName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Date of Death" data-bn="মৃত্যুর তারিখ">Date of Death</label>
+                    <input type="date" id="deathDate" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Cause of Death" data-bn="মৃত্যুর কারণ">Cause of Death</label>
+                    <input type="text" id="deathCause" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Applicant's Name" data-bn="আবেদনকারীর নাম">Applicant's Name</label>
+                    <input type="text" id="applicantName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Relationship with Deceased" data-bn="মৃত ব্যক্তির সাথে সম্পর্ক">Relationship with Deceased</label>
+                    <select id="relationship" required>
+                        <option value="" data-en="Select Relationship" data-bn="সম্পর্ক নির্বাচন করুন">Select Relationship</option>
+                        <option value="spouse" data-en="Spouse" data-bn="স্বামী/স্ত্রী">Spouse</option>
+                        <option value="child" data-en="Child" data-bn="সন্তান">Child</option>
+                        <option value="parent" data-en="Parent" data-bn="পিতামাতা">Parent</option>
+                        <option value="sibling" data-en="Sibling" data-bn="ভাইবোন">Sibling</option>
+                        <option value="other" data-en="Other" data-bn="অন্যান্য">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="deathContactPhone" required>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Application" data-bn="আবেদন জমা দিন">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Swasthya Sathi Modal -->
+    <div id="swasthyaSathiModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('swasthyaSathiModal')">&times;</span>
+            <h3 data-en="Swasthya Sathi Registration" data-bn="স্বাস্থ্য সাথী নিবন্ধন">Swasthya Sathi Registration</h3>
+            <form id="swasthyaSathiForm" onsubmit="handleSwasthyaSathi(event)">
+                <div class="form-group">
+                    <label data-en="Head of Family Name" data-bn="পরিবারের প্রধানের নাম">Head of Family Name</label>
+                    <input type="text" id="familyHeadName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Aadhaar Number" data-bn="আধার নম্বর">Aadhaar Number</label>
+                    <input type="text" id="aadhaarNumber" pattern="[0-9]{12}" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Ration Card Number" data-bn="রেশন কার্ড নম্বর">Ration Card Number</label>
+                    <input type="text" id="rationCardNumber" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Annual Income" data-bn="বার্ষিক আয়">Annual Income</label>
+                    <input type="number" id="annualIncome" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Number of Family Members" data-bn="পরিবারের সদস্য সংখ্যা">Number of Family Members</label>
+                    <input type="number" id="familyMembers" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="swasthyaContactPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Address" data-bn="ঠিকানা">Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Registration" data-bn="নিবন্ধন জমা দিন">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vaccination Modal -->
+    <div id="vaccinationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('vaccinationModal')">&times;</span>
+            <h3 data-en="Vaccination Information" data-bn="টিকাকরণের তথ্য">Vaccination Information</h3>
+            <div class="vaccination-info">
+                <h4 data-en="Available Vaccines" data-bn="উপলব্ধ টিকা">Available Vaccines</h4>
+                <ul>
+                    <li data-en="COVID-19 Vaccines (Covishield, Covaxin)" data-bn="কোভিড-১৯ টিকা (কোভিশিল্ড, কোভ্যাক্সিন)">COVID-19 Vaccines (Covishield, Covaxin)</li>
+                    <li data-en="Hepatitis B Vaccine" data-bn="হেপাটাইটিস বি টিকা">Hepatitis B Vaccine</li>
+                    <li data-en="Typhoid Vaccine" data-bn="টাইফয়েড টিকা">Typhoid Vaccine</li>
+                    <li data-en="Tetanus Vaccine" data-bn="টিটেনাস টিকা">Tetanus Vaccine</li>
+                </ul>
+                <h4 data-en="Schedule" data-bn="সময়সূচী">Schedule</h4>
+                <p data-en="Monday to Saturday: 9:00 AM - 5:00 PM" data-bn="সোমবার থেকে শনিবার: সকাল ৯টা - বিকাল ৫টা">Monday to Saturday: 9:00 AM - 5:00 PM</p>
+                <button class="btn btn-primary" onclick="scheduleVaccination()" data-en="Schedule Vaccination" data-bn="টিকাকরণের সময় নির্ধারণ করুন">Schedule Vaccination</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Complaint Modal -->
+    <div id="complaintModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('complaintModal')">&times;</span>
+            <h3 data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</h3>
+            <form id="complaintForm" onsubmit="handleComplaint(event)">
+                <div class="form-group">
+                    <label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
+                    <input type="text" id="complaintName" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Contact Number" data-bn="যোগাযোগের নম্বর">Contact Number</label>
+                    <input type="tel" id="complaintPhone" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Category" data-bn="অভিযোগের বিভাগ">Complaint Category</label>
+                    <select id="complaintCategory" required>
+                        <option value="" data-en="Select Category" data-bn="বিভাগ নির্বাচন করুন">Select Category</option>
+                        <option value="service" data-en="Service Quality" data-bn="সেবার মান">Service Quality</option>
+                        <option value="staff" data-en="Staff Behavior" data-bn="কর্মচারীদের আচরণ">Staff Behavior</option>
+                        <option value="facility" data-en="Facility Issues" data-bn="সুবিধার সমস্যা">Facility Issues</option>
+                        <option value="billing" data-en="Billing Issues" data-bn="বিলিং সমস্যা">Billing Issues</option>
+                        <option value="other" data-en="Other" data-bn="অন্যান্য">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-en="Complaint Details" data-bn="অভিযোগের বিস্তারিত">Complaint Details</label>
+                    <textarea id="complaintDetails" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-en="Submit Complaint" data-bn="অভিযোগ জমা দিন">Submit Complaint</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <span id="notificationMessage"></span>
+        <button onclick="closeNotification()">&times;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
